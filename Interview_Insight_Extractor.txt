@@ -1,0 +1,72 @@
+Given a raw interview transcript and corresponding JSON metadata from a YouTube video, synthesize a detailed report that thoroughly captures the interviewee's discourse and contextual video information. The interviewee is one of two main speakers, typically the one answering questions. Assume any unattributed statements within a Q&A format are made by the interviewer, except when context suggests audience questions. The report should be meticulously structured and segmented into the following parts:
+
+1. Video Metadata Summary:
+- Title: Include the video's title as listed in the metadata.
+- Video URL: Use the video ID from the metadata to construct the full URL.
+- Posted Time: Convert the posted time to a format that is easy for readers to understand.
+- YouTuber: Mention the name or channel associated with the video's poster.
+- Transcripts: Insert the full interview transcript here.
+
+2. Comprehensive Transcript Analysis:
+- Summary:
+   -- What is the central idea or thesis the interviewee is communicating?
+- In-Depth Main Points:
+   -- Identify and elaborate on each topic discussed by the interviewee.
+   -- Summarize the interviewee's key messages or ideas for each topic.
+   -- Include detailed Arguments and Reasoning.
+   -- Discuss how the interviewee supports their viewpoints, including logical structures or evidence. What reasons or supporting details does the interviewee provide to back up their main point? How does the interviewee structure their thoughts? Are there any logical frameworks or reasoning patterns they follow?
+
+- Comprehensive Comparative Analysis:
+   -- Compare the interviewee's perspectives to others' viewpoints, noting similarities and differences.
+
+- Extensive Evaluation of Rhetorical Techniques:
+   -- Identify rhetorical devices used by the interviewee to persuade and engage.
+
+- Overall Confidence and Tone:
+   --Assess the tone and language used by the interviewee. Do they seem assured and firm in their stance, or are there indications of uncertainty?
+
+- Consistency Across Topics:
+   -- Examine the consistency of the interviewee's points and any evidence of self-reflection or critique on different subjects.
+
+- Questioning and Doubt:
+   -- Highlight any self-questioning or expressions of doubt by the interviewee. Does the interviewee express any doubts or raise questions about their own opinions?
+
+- Adaptability and Future Views:
+   -- Indicate the interviewee's openness to changing their views in the future. Is there any indication that the interviewee's opinion is fixed, or do they show openness to changing their mind in light of new information or arguments?
+
+- Calls to Action and Motivation:
+   -- Identify calls to action and motivations behind the interviewee's statements.
+
+- Challenges and Objectives:
+   -- Note challenges discussed by the interviewee and their success metrics.
+
+- Underlying Motivations: 
+   --Infer the motivations behind the interviewee's perspectives.
+
+3. Report Formatting Instructions:
+- Organize the report with clear headings for each section as Step 2.
+- Present the video metadata at the beginning of the report followed by the transcript analysis.
+- Use direct quotes from the transcript to illustrate key points where necessary.
+- Ensure the report is well-structured, and provides an insightful summary of the interviewee's contributions to the interview, as well as the context provided by the video metadata.
+- Provide two output files. One is in plain txt, but user readable. The other is in csv format. The CSV file that should include the exact text from the user friendly output in step 3 (DO NOT rewrite the content, just format it into a csv format). For each section, if there are sub-section is the user-friendly format, make sure to include all levels of sub-sections in the higher section column. Do not try to simplify or summarize in the csv file! Each row represents a unique interview, and the columns should be:
+
+Title
+Video URL
+Posted Time
+YouTuber
+Transcript
+Summary
+In-Depth Main Points
+Arguments and Reasoning
+Comparative Analysis
+Rhetorical Techniques
+Confidence and Tone
+Consistency Across Topics
+Questioning and Doubt
+Adaptability and Future Views
+Calls to Action and Motivation
+Challenges and Objectives
+Underlying Motivations
+
+
+Please ensure the CSV is formatted with appropriate headers and organize the content into rows and columns that correspond to the structure provided. The output should be ready to include multiple interviews in one document for analysis and reference.
